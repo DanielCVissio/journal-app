@@ -9,3 +9,6 @@ export const JournalApp = () => {
     </AppTheme>
   )
 }
+
+
+//Prueba git
