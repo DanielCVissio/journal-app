@@ -9,6 +9,13 @@ export const useForm = ( initialForm = {}, formValidations={} ) => {
     useEffect(() => {
       createValidators();
     }, [formState])
+//Es recomendado que cada efecto tenga acargo una tarea propia
+
+
+    useEffect(() => {
+        setFormState(initialForm);
+    }, [initialForm])
+    
     
     const isFormValid= useMemo(()=>{
 
